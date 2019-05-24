@@ -8,7 +8,12 @@
     <header class="main-header">
       <div class="top-header">
         <a class="top-header-logo site-navigation-current" href="index.html"><img src="img/logo-technomart.svg" width="109px" height="19px" alt="Логотип Техномарт"></a>
-        <!--Здесь будет форма Поиска-->
+        <form>
+          <div class="search">
+            <input type="search" name="search-form" aria-label="Форма поиска по сайту">
+            <input type="submit">
+          </div>
+        </form>
         <a class="top-header-bookmarks" href="#">Закладки: 0</a>
         <a class="top-header-basket" href="#">Корзина: 0</a>
         <a class="top-header-buy" href="#">Оформить заказ</a>
@@ -55,6 +60,32 @@
         <p>Вы может забрать товар сами, заехав в наш офис:</p>
         <a class="map" href="#"><img src="img/map.jpg" width="300px" height="158px" alt="Карта проезда в офис"></a>
         <a class="button" href="#">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
+      </section>
+      <section class="modal modal-map">
+        <h2 class="visually-hidden">Как доехать до нашего офиса</h2>
+        <p>
+            <img src="img/map-big.jpg" width="940px" height="446px" alt="Офис компании по адресу ул. Большая Конюшенная 19, Санкт-Петербур">
+        </p>
+        <button class="modal-close" type="button">Закрыть</button>
+      </section>
+      <section class="modal modal-mail">
+        <h2 class="visually-hidden">Отправка письма</h2>
+        <form class="send-form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="send-item">
+            <label for="send-name">Ваше имя:</label>
+            <input type="text" name="name" id="send-name" placeholder="Имя Фамилия">
+          </p>
+          <p class="send-item">
+            <label for="send-email">Ваш e-mail:</label>
+            <input type="email" name="email" id="send-email" placeholder="email@example.com">
+          </p>
+          <p class="send-item">
+            <label for="send-text"></label>
+            <textarea name="text" id="send-text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+          </p>
+          <button class="button" type="submit">Отправить</button>
+        </form>
+        <button class="modal-close" type="button">Закрыть</button>
       </section>
     </main>
     <footer>
